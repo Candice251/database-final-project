@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>註冊 - 清交二手拍</title>
+  <script defer src="register.js"></script>
+</head>
+<body>
+  <h2>註冊帳號</h2>
+  <form id="registerForm">
+    <label>姓名：<input type="text" id="name" required></label><br>
+    <label>信箱：<input type="email" id="email" required></label><br>
+    <label>電話：<input type="text" id="phone" required></label><br>
+    <label>密碼：<input type="password" id="password" required></label><br>
+    <label>性別：
+      <select id="gender" required>
+        <option value="">請選擇</option>
+        <option value="男">男</option>
+        <option value="女">女</option>
+      </select>
+    </label><br>
+    <label>學校：
+      <select id="university" required>
+        <option value="">請選擇</option>
+        <option value="清大">清大</option>
+        <option value="交大">交大</option>
+      </select>
+    </label><br>
+    <button type="submit">註冊</button>
+  </form>
+  <p>已經有帳號？<a href="login.html">點我登入</a></p>
+</body>
+</html>
