@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>購物車 - 清交二手拍</title>
+  <script defer src="cart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .item {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .item p {
+      margin: 5px 0;
+    }
+    #totalPrice {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>我的購物車</h2>
+
+  <div id="cartList">
+    <!-- 購物車商品會顯示在這裡 -->
+  </div>
+
+  <p id="totalPrice"></p>
+
+  <button onclick="clearCart()">清空購物車</button>
+  <button onclick="window.location.href='home.html'">返回商品頁</button>
+</body>
+</html>
+
+

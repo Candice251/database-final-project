@@ -31,4 +31,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       alert('載入商品資料時發生錯誤');
     }
   });
-  
+
+  function addToCart(product) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.push(product);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert(`已將「${product.product_name}」加入購物車！`);
+}
