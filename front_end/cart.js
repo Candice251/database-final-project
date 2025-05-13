@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   const userId = localStorage.getItem('loggedInUser');
-  if (!userId) {
+  /*if (!userId) {
     alert('請先登入');
     window.location.href = 'login.html';
     return;
-  }
+  }*/
 
   const cartKey = `cart_${userId}`;
   let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
